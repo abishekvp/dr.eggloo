@@ -38,10 +38,10 @@
     <div class="container d-flex justify-content-center justify-content-md-between">
       <div class="contact-info d-flex align-items-center">
         <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:helpdesk@dreggloo.com">helpdesk@dreggloo.com</a></i>
-        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+91 88070 69977</span></i>
+        <i class="bi bi-phone d-flex align-items-center ms-4"><a href="tel:+918807069977"><span>+91 88070 69977</span></a></i>
       </div>
       <div class="social-links d-none d-md-flex align-items-center">
-        <a href="https://blissinfotech.web.app/" class="website"target="_blank"><i class="bi bi-globe"></i></a>
+        <!-- <a href="https://blissinfotech.web.app/" class="website"target="_blank"><i class="bi bi-globe"></i></a> -->
         <a href="https://www.youtube.com/channel/UClmmDeiQDAK6_PJdisG7CIQ" class="facebook" target="_blank"><i class="bi bi-youtube"></i></a>
         <a href="https://www.instagram.com/dr.eggloo/" class="instagram" target="_blank"><i class="bi bi-instagram"></i></a>
         <a href="https://www.facebook.com/people/DrEggloo/61557515960203/" class="linkedin" target="_blank"><i class="bi bi-facebook"></i></a>
@@ -78,10 +78,10 @@
   <!-- End Header -->
   <!-- End Header -->
 
-  <section id="hero" class="hero">
+  <section id="hero" class="hero" style="background-color: white;color:rgb(255, 60, 0);">
     <div class="container position-relative">
       <div class="row gy-5" data-aos="fade-in">
-        <h1 style="font-size: 50px;font-weight:900;text-align:center;">Real Country Chicken Egg for <br> Fit - Forward Child</h1>
+        <h1 style="font-size: 50px;font-weight:900;text-align:center;">Real Country Chicken Egg for the <br> Fit - Forward Child</h1>
       </div>
       <br><br>
     </div>
@@ -91,7 +91,7 @@
 
   <main id="main">
 
-    <section id="recent-posts" class="recent-posts">
+    <section id="recent-posts" class="recent-posts" style="background-color: rgb(255, 60, 0);color:white;">
       <div class="container" data-aos="fade-up">
         <br><br>
         <div class="section-header">
@@ -102,7 +102,25 @@
       </div>
     </section>
 
-    <section id="about" class="about  sections-bg">
+    <section id="gallery" class="gallery" style="background-color: white;color:rgb(255, 60, 0);">
+      <h1>Gallery</h1>
+      <br>
+      <div>
+        <img src="./assets/img/img1.JPG" alt="">
+        <img src="./assets/img/img2.JPG" alt="">
+        <img src="./assets/img/img3.JPG" alt="">
+        <img src="./assets/img/img4.JPG" alt="">
+        <img src="./assets/img/img5.JPG" alt="">
+        <img src="./assets/img/img6.JPG" alt="">
+        <img src="./assets/img/img7.JPG" alt="">
+        <img src="./assets/img/img8.JPG" alt="">
+      </div>
+    </section>
+    <section style="background-color: rgb(255, 60, 0);color:white;text-align:center;margin:5%;" id="gallery" class="gallery" style="background-color: white;color:rgb(255, 60, 0);">
+      <iframe width="90%" height="600" src="https://www.youtube.com/embed/sVrduOisnRM?si=8afnhaBOhJGXH5nV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </section>
+
+    <section id="about" class="about  sections-bg" style="background-color: white;color:rgb(255, 60, 0);">
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
@@ -111,44 +129,91 @@
 
         <div class="row gy-4">
           <div class="col-lg-12" style="text-align: justify;">
-            <h3>Unlike broilers and hybrids found in Chennai, We guarantee 100% original country hen eggs—no hybrids, no broilers, just pure goodness!</h3>
-            <h3>We understand how important it is to provide healthy nutrition to children aged 2 to 10.  From sunny-side-up breakfasts to baking adventures, our சிறுவிடை, பெருவிடை hens's eggs are the perfect addition to any child's diet, offering purity, nutrition, and tradition in every bite.</h3>
-            <h3>Our eggs are exclusively available in Chennai. Importing from the South part of Tamilnadu, ensuring originality for our exclusive customers</h3>
+            <!-- <h3><li>Unlike broilers and hybrids found in Chennai, We guarantee 100% original country hen eggs—no hybrids, no broilers, just pure goodness!</li></h3> -->
+            <!-- <h3><li>We understand how important it is to provide healthy nutrition to children aged 2 to 10.  From sunny-side-up breakfasts to baking adventures, our சிறுவிடை, பெருவிடை hens's eggs are the perfect addition to any child's diet, offering purity, nutrition, and tradition in every bite.</li></h3> -->
+            <table>
+              <thead>
+                <tr>
+                  <th style="width: 50%;">Other Egg Sellers</th>
+                  <th>Our Eggs</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Hybrid Hens</td>
+                  <td>No Hybrid Hens</td>
+                </tr>
+                <tr>
+                  <td>Giriraja Hens</td>
+                  <td>Siruvidai & Peruvidai (Country Bread)</td>
+                </tr>
+                <tr>
+                  <td>General</td>
+                  <td>Specific for Kids</td>
+                </tr>
+                <tr>
+                  <td>Mass Production</td>
+                  <td>Laying Limited Eggs</td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- <h3><li>Our eggs are exclusively available in Chennai. Importing from the South part of Tamilnadu, ensuring originality for our exclusive customers</li></h3> -->
           </div>
         </div>
-
+        <style>
+          table{
+            width: 100%;
+            font-size: 25px;
+          }
+          table tr, th, td{
+            border: 4px solid black;
+            padding: 5px;
+          }
+          table tr th{
+            font-size: 30px;
+          }
+          table td{
+            font-size: 25px;
+            font-weight: 700;
+            padding-left: 20px;
+          }
+          table thead tr th{
+            text-align: center;
+          }
+        </style>
       </div>
     </section>
     
 
-    <section id="pricing" class="pricing sections-bg">
+    <section id="pricing" class="pricing sections-bg" style="background-color: rgb(255, 60, 0);color:white;">
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
           <h2>Pricing</h2>
         </div>
 
-        <div class="row g-4 py-lg-5" data-aos="zoom-out" data-aos-delay="100">
+        <div class="row g-4 py-lg-5" style="margin: auto;" data-aos="zoom-out" data-aos-delay="100">
 
           <div class="col-lg-4">
             <div class="pricing-item">
-              <h3>ANY PROGRAMMING LANGUAGE</h3>
+              <h3>Basic Plan</h3>
               <div class="icon">
                 <i class="bi bi-box"></i>
               </div>
-              <h4><sup>₹</sup>1940<span> / Language</span></h4>
+              <h4><sup>₹</sup>890<span> / Per Month</span></h4>
               <ul>
-                <li><i class="bi bi-check"></i> Guidance even after the course completion</li>
-                <li><i class="bi bi-check"></i> Individual assists to growth</li>
-                <li><i class="bi bi-check"></i> Placement support</li>
-                <li class="na"><i class="bi bi-check"></i> Career Guidance</li>
-                <li class="na"><i class="bi bi-check"></i> Support on personal projects</li>
+                <li><i class="bi bi-check"></i> Perfect for One Child</li>
+                <li><i class="bi bi-check"></i> Delivered every Week</li>
+                <li><i class="bi bi-check"></i> 6 Eggs per week</li>
+                <!-- <li><i class="bi bi-check"></i> Placement support</li> -->
+                <!-- <li class="na"><i class="bi bi-check"></i> Career Guidance</li> -->
+                <!-- <li class="na"><i class="bi bi-check"></i> Support on personal projects</li> -->
               </ul>
             </div>
           </div>
 
           <div class="col-lg-4">
-            <div class="pricing-item featured">
+            <!-- <div class="pricing-item featured">
               <h3>WEB Development OR APP Development</h3>
               <div class="icon">
                 <i class="bi bi-airplane"></i>
@@ -162,22 +227,20 @@
                 <li><i class="bi bi-check"></i> Placement support</li>
                 <li><i class="bi bi-check"></i> Support on personal projects</li>
               </ul>
-            </div>
+            </div> -->
           </div>
 
           <div class="col-lg-4">
             <div class="pricing-item">
-              <h3>Project - Mentoring & Guidance</h3>
+              <h3>Advanced Plan</h3>
               <div class="icon">
                 <i class="bi bi-send"></i>
               </div>
-              <h4><sup>₹</sup>3310<span> / Project</span></h4>
+              <h4><sup>₹</sup>1780<span> / Month</span></h4>
               <ul>                
-                <li><i class="bi bi-check"></i> Guidance even after the course completion</li>
-                <li><i class="bi bi-check"></i> Individual assists to growth</li>
-                <li><i class="bi bi-check"></i> Support on personal projects</li>
-                <li><i class="bi bi-check"></i> Career Guidance</li>
-                <li class="na"><i class="bi bi-check"></i> Placement support</li>
+                <li><i class="bi bi-check"></i> Perfect for Two Child</li>
+                <li><i class="bi bi-check"></i> Delivered every Week</li>
+                <li><i class="bi bi-check"></i> 12 Eggs per week</li>
               </ul>
             </div>
           </div>
@@ -189,7 +252,7 @@
 
 
     <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
+    <section id="contact" class="contact"  style="background-color: white;color:rgb(255, 60, 0);">
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
@@ -197,12 +260,12 @@
           <!-- <p>Nulla dolorum nulla nesciunt rerum facere sed ut inventore quam porro nihil id ratione ea sunt quis dolorem dolore earum</p> -->
         </div>
 
-        <div class="row gx-lg-0 gy-12 tect-center">
+        <div class="row gx-lg-0 gy-12 tect-center" style="background-color: white;color:rgb(255, 60, 0);">
 
           <div class="col-lg-12">
 
-            <div class="info-container d-flex flex-column align-items-center justify-content-center">
-              <div class="info-item d-flex">
+            <div class="info-container d-flex flex-column align-items-center justify-content-center" style="background-color: rgb(255, 60, 0);color:white;">
+              <div class="info-item d-flex" style="background-color: white;color: rgb(255, 60, 0);">
                 <i class="bi bi-geo-alt flex-shrink-0"></i>
                 <div>
                   <h4>Location:</h4>
@@ -210,7 +273,7 @@
                 </div>
               </div><!-- End Info Item -->
 
-              <div class="info-item d-flex">
+              <div class="info-item d-flex" style="background-color: white;color: rgb(255, 60, 0);">
                 <i class="bi bi-envelope flex-shrink-0"></i>
                 <div>
                   <h4>Email:</h4>
@@ -218,7 +281,7 @@
                 </div>
               </div><!-- End Info Item -->
 
-              <div class="info-item d-flex">
+              <div class="info-item d-flex" style="background-color: white;color: rgb(255, 60, 0);">
                 <i class="bi bi-phone flex-shrink-0"></i>
                 <div>
                   <h4>Call:</h4>
@@ -226,7 +289,7 @@
                 </div>
               </div><!-- End Info Item -->
 
-              <div class="info-item d-flex">
+              <div class="info-item d-flex" style="background-color: white;color: rgb(255, 60, 0);">
                 <i class="bi bi-clock flex-shrink-0"></i>
                 <div>
                   <h4>Open Hours:</h4>
@@ -241,7 +304,18 @@
 
   </main>
   <!-- End #main -->
-  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="https://wa.me/+918807069977" id="whatsapp"><img src="./assets/img/whatsapp.webp" alt=""></a>
+  <style>
+    #whatsapp img{
+      position: fixed;
+      width: 50px;
+      height: 50px;
+      bottom: 20px;
+      right: 20px;
+      z-index: 9999;
+    }
+  </style>
+  <!-- <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a> -->
     
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>

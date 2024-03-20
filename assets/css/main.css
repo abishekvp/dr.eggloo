@@ -2717,3 +2717,16 @@ section {
 .footer .credits a {
   color: #fff;
 }
+.gallery{
+  text-align: center;
+  font-weight: bolder;
+}
+.gallery div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.gallery img{
+  width: 25%;
+  padding: 10px;
+}
