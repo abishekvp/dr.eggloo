@@ -2735,12 +2735,6 @@ section {
   width: auto !important;
 }
 
-.brand-icon {
-  height: 100px;        /* Increase this if needed */
-  width: auto;
-  margin-left: 0px;
-  vertical-align: middle;
-}
 
 .logo {
   overflow: visible !important;
@@ -2748,12 +2742,26 @@ section {
   align-items: center;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
 .logo img {
   max-height: none !important;
-  margin-right: 15px;   /* pushes text slightly right */
-  margin-left: -12px;
   height: 70px !important;
-  vertical-align: middle;   /* Change to 150px or 200px if needed */
   width: auto !important;
+  margin: 0 !important; 
+  display: block; 
+}
 
+.logo h1 {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+
+ margin-left: -28px;        /* strong pull */
+  transform: translateX(-6px); /* extra push */
+  letter-spacing: -0.8px; 
 }
