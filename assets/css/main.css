@@ -2777,3 +2777,14 @@ section {
     width: 90%;
   }
 }
+
+@media (max-width: 768px) {
+  table {
+    font-size: 16px;
+  }
+
+  table td, table th {
+    font-size: 16px;
+  }
+}
+
