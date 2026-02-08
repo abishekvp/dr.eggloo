@@ -2765,3 +2765,15 @@ section {
   transform: translateX(-6px); /* extra push */
   letter-spacing: -0.8px; 
 }
+
+@media (max-width: 768px) {
+  .gallery img {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery img {
+    width: 90%;
+  }
+}
