@@ -2730,3 +2730,30 @@ section {
   width: 25%;
   padding: 10px;
 }
+.logo h1 img.brand-icon {
+  height: 120px !important;
+  width: auto !important;
+}
+
+.brand-icon {
+  height: 100px;        /* Increase this if needed */
+  width: auto;
+  margin-left: 0px;
+  vertical-align: middle;
+}
+
+.logo {
+  overflow: visible !important;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  max-height: none !important;
+  margin-right: 15px;   /* pushes text slightly right */
+  margin-left: -12px;
+  height: 70px !important;
+  vertical-align: middle;   /* Change to 150px or 200px if needed */
+  width: auto !important;
+
+}
