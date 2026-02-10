@@ -62,7 +62,7 @@ h6 {
 # Sections & Section Header
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 35px 0;
   overflow: hidden;
 }
 
@@ -2721,7 +2721,7 @@ section {
   text-align: center;
   font-weight: bolder;
 }
-.gallery div{
+.gallery > div:not(.swiper) {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -2844,3 +2844,71 @@ section {
   box-shadow: 0 15px 35px rgba(0,0,0,0.2);
 }
 
+/* Fix Gallery Slideshow Size */
+#video-gallery {
+  padding: 40px 0 !important;   /* Reduce section space */
+}
+
+.gallery-swiper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Center each slide */
+.gallery-swiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Center image properly */
+.gallery-swiper img {
+  width: 100%;
+  height: auto;
+  max-height: 450px;
+
+  object-fit: contain;   /* Full image */
+  object-position: center center; /* ✅ Center it */
+
+  border-radius: 12px;
+  display: block;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .gallery-swiper {
+    width: 95%;
+  }
+
+  .gallery-swiper img {
+    max-height: 220px;
+  }
+}
+
+#video-gallery {
+  padding: 25px 0 !important;
+  margin: 0 !important;
+}
+
+#video-gallery h1 {
+  margin-bottom: 15px;
+}
+
+/* Remove space from swiper */
+.gallery-swiper {
+  margin: 0 auto !important;
+  padding: 0 !important;
+}
+
+.gallery-swiper .swiper-wrapper,
+.gallery-swiper .swiper-slide {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Fix iframe section space */
+#gallery {
+  margin: 20px 0 !important;
+  padding: 20px 0 !important;
+}

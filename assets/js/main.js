@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
    * Mobile nav toggle
    */
   const mobileNavShow = document.querySelector('.mobile-nav-show');
-  // const mobileNavHide = document.querySelector('.mobile-nav-hide');
+  const mobileNavHide = document.querySelector('.mobile-nav-hide');
 
   document.querySelectorAll('.mobile-nav-toggle').forEach(el => {
     el.addEventListener('click', function(event) {
@@ -209,34 +209,59 @@ document.addEventListener('DOMContentLoaded', () => {
   /**
    * Init swiper slider with 3 slides at once in desktop view
    */
-  new Swiper('.slides-3', {
-    speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 40
-      },
+  // new Swiper('.slides-3', {
+  //   speed: 600,
+  //   loop: true,
+  //   autoplay: {
+  //     delay: 5000,
+  //     disableOnInteraction: false
+  //   },
+  //   slidesPerView: 'auto',
+  //   pagination: {
+  //     el: '.swiper-pagination',
+  //     type: 'bullets',
+  //     clickable: true
+  //   },
+  //   navigation: {
+  //     nextEl: '.swiper-button-next',
+  //     prevEl: '.swiper-button-prev',
+  //   },
+  //   breakpoints: {
+  //     320: {
+  //       slidesPerView: 1,
+  //       spaceBetween: 40
+  //     },
 
-      1200: {
-        slidesPerView: 3,
-      }
-    }
-  });
+  //     1200: {
+  //       slidesPerView: 3,
+  //     }
+  //   }
+  // });
+
+  new Swiper('.gallery-swiper', {
+  loop: true,
+
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+
+  autoHeight: true,   // ✅ THIS FIXES WHITE SPACE
+
+  pagination: {
+    el: '.gallery-swiper .swiper-pagination',
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: '.gallery-swiper .swiper-button-next',
+    prevEl: '.gallery-swiper .swiper-button-prev',
+  },
+
+  slidesPerView: 1,
+  spaceBetween: 10,
+});
+
 
   /**
    * Porfolio isotope and filter
