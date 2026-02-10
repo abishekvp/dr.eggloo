@@ -246,7 +246,12 @@ document.addEventListener('DOMContentLoaded', () => {
     disableOnInteraction: false,
   },
 
-  autoHeight: true,   // ✅ THIS FIXES WHITE SPACE
+  slidesPerView: 1,
+  centeredSlides: true,
+  spaceBetween: 0,
+
+  observer: true,        // ✅ Helps reload properly
+  observeParents: true, // ✅ Important for hosting issue
 
   pagination: {
     el: '.gallery-swiper .swiper-pagination',
@@ -257,10 +262,8 @@ document.addEventListener('DOMContentLoaded', () => {
     nextEl: '.gallery-swiper .swiper-button-next',
     prevEl: '.gallery-swiper .swiper-button-prev',
   },
-
-  slidesPerView: 1,
-  spaceBetween: 10,
 });
+
 
 
   /**

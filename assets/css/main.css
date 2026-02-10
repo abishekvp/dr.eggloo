@@ -2886,29 +2886,40 @@ section {
   }
 }
 
+/* ===== GALLERY FIX ===== */
+
 #video-gallery {
-  padding: 25px 0 !important;
-  margin: 0 !important;
+  padding: 40px 0 !important;
+  text-align: center;
 }
 
-#video-gallery h1 {
-  margin-bottom: 15px;
-}
-
-/* Remove space from swiper */
 .gallery-swiper {
-  margin: 0 auto !important;
-  padding: 0 !important;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
-.gallery-swiper .swiper-wrapper,
 .gallery-swiper .swiper-slide {
-  margin: 0 !important;
-  padding: 0 !important;
+  text-align: center;
 }
 
-/* Fix iframe section space */
-#gallery {
-  margin: 20px 0 !important;
-  padding: 20px 0 !important;
+.gallery-swiper img {
+  width: 100%;
+  max-height: 450px;
+
+  object-fit: contain;
+  object-position: center;
+
+  display: block;
+  margin: 0 auto;
+
+  border-radius: 12px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .gallery-swiper img {
+    max-height: 260px;
+  }
 }
