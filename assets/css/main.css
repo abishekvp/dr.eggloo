@@ -1886,3 +1886,54 @@ footer {
     margin-top: 0;
   }
 }
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-left: auto;
+}
+
+.socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  color: #fff;
+  text-decoration: none;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-left: auto;
+}
+
+.socials a {
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.socials a:hover {
+  transform: translateY(-2px);
+  opacity: 0.8;
+}
+
+.hero-actions .btn.primary {
+  margin-top: 8px;
+}
+
+@media (max-width: 600px) {
+  .hero-actions .btn.primary {
+    margin-top: 6px;
+  }
+}
