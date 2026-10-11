@@ -2013,3 +2013,71 @@ footer {
       url("../img/parent-choice-family.webp") center center / cover no-repeat;
   }
 }
+
+/* =========================================================
+   YouTube Farm Story
+   ========================================================= */
+
+.farm-video {
+  background: #fffaf5;
+}
+
+.youtube-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 26px;
+  background: #151515;
+  box-shadow: 0 25px 60px rgba(54, 31, 13, 0.15);
+}
+
+.youtube-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 0;
+}
+
+.video-caption {
+  max-width: 1050px;
+  margin: 20px auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.video-caption strong {
+  color: var(--orange);
+  font-size: 13px;
+}
+
+.video-caption span {
+  color: var(--muted);
+}
+
+@media (max-width: 600px) {
+  .youtube-wrapper {
+    border-radius: 16px;
+  }
+
+  .video-caption {
+    flex-direction: column;
+    gap: 4px;
+    padding: 0 10px;
+  }
+
+  .video-caption strong {
+    font-size: 12px;
+  }
+
+  .video-caption span {
+    font-size: 11px;
+  }
+}
